@@ -6,7 +6,8 @@ for i in range(1, 101):
 		b = 2 * n**2 + 2*n
 		c = 2 * n**2 + 2*n + 1
 		if a <= 100 and b <= 100 and c <= 100:
-			print(a, b, c, sep = ',', end = '\n')
+			if a % 2 == 0 and b % 2 == 0 and c % 2 ==0:
+				print(a, b, c, sep = ',', end = '\n')
 	else:
 		# 输入的a为偶数，则a = 2n，b=n**2-1，c=n**2+1
 		if a >= 3 and a % 2 == 0:
@@ -14,4 +15,5 @@ for i in range(1, 101):
 			b = n**2 - 1
 			c = n**2 + 1
 			if a <= 100 and b <= 100 and c <= 100:
-				print(a, b, c, sep = ',', end = '\n')
+				if a % 2 == 0 and b % 2 == 0 and c % 2 ==0:
+					print(a, b, c, sep = ',', end = '\n')
